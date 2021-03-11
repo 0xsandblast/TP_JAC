@@ -1,22 +1,27 @@
 export default data = [
     {
-        "nom":'Clément Chapurlat',
-        "photo":'pic here'
+        nom:'Clément Chapurlat',
+        photo:'..Listes/TestPic.jpg',
+        description: 'bla blab  la'
     },
     {
-        "nom":'Gauthier Itart-Longueville',
-        "photo":'pic here'
+        nom:'Gauthier Itart-Longueville',
+        photo:'pic here',
+        description: 'bla bla bla'
     },
     {
-        "nom":'Tristan Brankovic',
-        "photo":'pic here'
+        nom:'Tristan Brankovic',
+        photo:'..Listes/TestPic.jpg',
+        description: 'bla bla bla'
     },
     {
-        "nom":'Hyppolyte BACH',
-        "photo":'pic here'
+        nom:'Hyppolyte BACH',
+        photo:'..Listes/TestPic.jpg',
+        description: 'bla bla bla'
     },
     {
-        "nom":'Nathan Weber',
-        "photo":'pic here'
+        nom:'Nathan Weber',
+        photo:'..Listes/TestPic.jpg',
+        description: 'bla bla bla'
     },
 ]
