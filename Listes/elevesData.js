@@ -1,27 +1,34 @@
-export default data = [
+const eleves = [
     {
-        nom:'Clément Chapurlat',
-        photo:'..Listes/TestPic.jpg',
+        id: 1,
+        name:'Clément Chapurlat',
+        photo:'../Listes/TestPic.jpg',
         description: 'bla blab  la'
     },
     {
-        nom:'Gauthier Itart-Longueville',
+        id: 2,
+        name:'Gauthier Itart-Longueville',
         photo:'pic here',
         description: 'bla bla bla'
     },
     {
-        nom:'Tristan Brankovic',
-        photo:'..Listes/TestPic.jpg',
+        id: 3,
+        name:'Tristan Brankovic',
+        photo:'../Listes/TestPic.jpg',
         description: 'bla bla bla'
     },
     {
-        nom:'Hyppolyte BACH',
-        photo:'..Listes/TestPic.jpg',
+        id: 4,
+        name:'Hyppolyte BACH',
+        photo:'../Listes/TestPic.jpg',
         description: 'bla bla bla'
     },
     {
-        nom:'Nathan Weber',
-        photo:'..Listes/TestPic.jpg',
+        id: 5,
+        name:'Nathan Weber',
+        photo:'../Listes/TestPic.jpg',
         description: 'bla bla bla'
-    },
+    }
 ]
+
+export default eleves;

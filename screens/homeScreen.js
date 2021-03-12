@@ -1,20 +1,22 @@
 import React from 'react';
-import { View, Text, Button, StyleSheet, Image } from 'react-native';
+import { View, Text, Button, StyleSheet, Image, FlatList } from 'react-native';
+import eleves from '../Listes/elevesData';
 
 class HomeScreen extends React.Component {
     render() {
         return (
             <View title='HomeScreen' style={{flex: 1}}>
 
-                <View style={styles.listeImage}>
-                    <Image style={styles.sizeImage} source={require('../Listes/TestPic.jpg')} />
-                    <Image style={styles.sizeImage} source={require('../Listes/TestPic.jpg')} />
-                </View>
+                    <FlatList
+                            data={eleves}
+                            keyExtractor={(item) => item.id.toString()}
+                            renderItem={({item}) => <Text>{item.name}, {item.description}</Text>} />
 
                 <View style={styles.container}>
-                <Text> Home Screen test </Text>
-                <Button title='aller aux details' onPress={() => this.props.navigation.navigate('Details')} />
+                    <Text> Home Screen test </Text>
+                    <Button title='aller aux details' onPress={() => this.props.navigation.navigate('Details')} />
                 </View>
+
             </View>            
         );
     }
@@ -28,10 +30,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     listeImage: {
-        flex:5,
-        flexDirection: 'row',
-        alignItems: 'center',
-        padding:15,
+        flex:1,
     },
     sizeImage:{
         flex: 1,
