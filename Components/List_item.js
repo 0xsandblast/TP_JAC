@@ -1,19 +1,18 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, Image } from 'react-native';
+import images from '../Listes/img_src'
 
 class List_item extends React.Component {
     render() {
 
-        const eleve = this.props.eleve
+        const eleve = this.props.eleve;
 
         return (
-            <TouchableOpacity>
                 <View name='box' style={styles.box}>
-                    <Image style={styles.image} source={require('../Listes/TestPic.jpg')} />
+                    <Image style={styles.image} source={require('../Listes/NTesla.jpg')} />
                     <Text name='nom' style={styles.text} numberOfLines={1}>{eleve.name}</Text>
                     <Text name='description' style={styles.text2} numberOfLines={2} >{eleve.description}</Text>
                 </View>
-            </TouchableOpacity>
         );
     }
 }
