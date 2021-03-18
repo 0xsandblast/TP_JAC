@@ -1,15 +1,16 @@
 import React from 'react';
+import images from '../Listes/img_src';
 import { View, Text, StyleSheet, Image } from 'react-native';
-import images from '../Listes/img_src'
 
 class List_item extends React.Component {
     render() {
 
         const eleve = this.props.eleve;
+        const eleveId = eleve.id
 
         return (
                 <View name='box' style={styles.box}>
-                    <Image style={styles.image} source={require('../Listes/NTesla.jpg')} />
+                    <Image style={styles.image} source={images.elevesIm[eleveId]} />
                     <Text name='nom' style={styles.text} numberOfLines={1}>{eleve.name}</Text>
                     <Text name='description' style={styles.text2} numberOfLines={2} >{eleve.description}</Text>
                 </View>
